@@ -1,212 +1,195 @@
 :root {
---pre-primary-color:#FFFFFF;
---primary-teks-color:#212121;
---secondary-teks-color:#757575;
---akcent-color:#2196F3;
---body-color:#F5F5F5;
---auth-nav-color:rgba(255, 255, 255, 0.6);
---button-color-nav:#F5F4FA;
-}
-
-body {
-    background-color: var(--body-color);
-    font-family:Roboto,sans-serif;  
-} 
- 
-ul {
-    list-style: none;
-}
-
-/* Шапка */
-/* Header  and footer logo */
-.header-logo,
-.logo-footer,
-.header-title  {
-    font-family: Raleway, cursive;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;         
-}
-
-.header-logo {
-    color: #000000;
-}
-
-.header-title {
-    color:var(--akcent-color);
-       
+    --pre-primary-color:#FFFFFF;
+    --primary-teks-color:#212121;
+    --secondary-teks-color:#757575;
+    --akcent-color:#2196F3;
+    --body-color:#F5F5F5;
+    --auth-nav-color:rgba(255, 255, 255, 0.6);
+    --button-color-nav:#F5F4FA;
     }
-
- .logo-footer {
-    color:var(--pre-primary-color);        
-}
-   
-/* Header nav  */
-.header-nav,
- .link {
-    color:var(--primary-teks-color);
-    letter-spacing: 0.02em;
-    font-family: inherit;         
-    font-weight: 500;
-    font-size: 14px;
-    line-height:1.1; 
-    text-decoration:none;   
+    
+    body {
+        background-color: var(--body-color);
+        font-family:Roboto,sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        text-decoration: none;  
+    } 
+     
+    ul {
+        list-style: none;
     }
-    .header-nav .link:hover,
-    .header-nav .link:focus {
+    
+    /* Шапка */
+    /* Header  and footer logo */
+    .header-logo,
+    .logo-footer,
+    .header-title  {
+        font-family: Raleway, cursive;                  
+        font-size: 14px;
+        line-height: 1.7;         
+    }
+    
+    .header-logo {
+        color: #000000;
+    }
+    
+    .header-title {
         color:var(--akcent-color);
+           
         }
-
-/* Header auth and footer auth*/
-.header-auth a {
-    color:rgba(255, 255, 255, 0.6);
-    letter-spacing: 0.03em;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7px;
-    text-decoration: none;
-}
-.header-auth  a:hover {
-    color:var(--akcent-color);
-}
     
-/* Hero */
-/* Hero title*/
-.hero-title {
-    color:var(--pre-primary-color);
-    letter-spacing: 0.06em;
-    font-family:inherit;
-    text-align: center;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height:1.4;    
-}
- 
-/* Hero button */
-.hero-btm,
-.hero-btm:active {
-    color: var(--pre-primary-color);
-    background-color: var(--akcent-color);    
-    font-family: Roboto,sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
-    letter-spacing: 0.06em;
-    cursor: pointer;
+     .logo-footer {
+        color:var(--pre-primary-color);        
     }
-  
-
-/* Sections features */
-
-.title-features {
-    color: var(--primary-teks-color)
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-.features-description {
-    color: var(--secondary-teks-color);
-    font-family:inherit;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7px;
-    letter-spacing: 0.03em;
-}
-
-
-/* Чим ми займаємося */
-/* Наша команда */
-.section-title {
-    color:var(--primary-teks-color);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height:1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    }
-
-    .section-avatar{
-    color: var(--primary-teks-color);
-    font-style: normal;         
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    text-align: center;
-    }
-    .section-team {
-    color: var(--secondary-teks-color);
-    font-style: normal;
-    font-weight: 400;       
-    font-size: 16px;
-    line-height:1.18;
-    text-align: center;          
-    }
-
-
-/* Button nav portfolio */
-
-.radio-btn  {
-    color:var(--primary-teks-color);
-    font-family: Roboto,sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    cursor: pointer;
-      
-}
- 
-.radio-btn:hover,
-.radio-btn:focus {
-    color:var(--pre-primary-color); 
-    background-color: var(--akcent-color);  
-}
+       
+    /* Header nav  */
+    .header-nav,
+     .link {
+        color:var(--primary-teks-color);
+        letter-spacing: 0.02em;
+        font-family: inherit;         
+        font-weight: 500;
+        font-size: 14px;
+        line-height:1.1;
+        text-decoration: none; 
+           
+        }
+        .header-nav .link:hover,
+        .header-nav .link:focus {
+            color:var(--akcent-color);
+            }
     
- 
-
-
-.project-title {
-    color:var(--primary-teks-color) ;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-
-.project-description {
-    color: var(--secondary-teks-color);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.8;
-    letter-spacing: 0.03em;
-}
-
- 
- 
-/* Footer */
-
-#link {
-    color: var(--pre-primary-color);
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7px;
-    letter-spacing: 0.03em;
+    /* Header auth and footer auth*/
+    .header-auth a {
+        color:rgba(255, 255, 255, 0.6);
+        letter-spacing: 0.03em;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7px;
+        text-decoration: none;
+    }
+    .header-auth  a:hover {
+        color:var(--akcent-color);
+    }
+        
+    /* Hero */
+    /* Hero title*/
+    .hero-title {
+        color:var(--pre-primary-color);
+        letter-spacing: 0.06em;         
+        text-align: center;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height:1.4;    
+    }
+     
+    /* Hero button */
+    .hero-btm,
+    .hero-btm:active {
+        color: var(--pre-primary-color);
+        background-color: var(--akcent-color);    
+        font-family: Roboto,sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.8;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        }
       
- }
-
-
- 
- 
+    
+    /* Sections features */
+    
+    .title-features {
+        color: var(--primary-teks-color);        
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.15;        
+        text-transform: uppercase;
+    }
+    .features-description {
+        color: var(--secondary-teks-color);        
+        font-size: 14px;
+        line-height: 1.7px;         
+    }
+    
+    
+    /* Чим ми займаємося */
+    /* Наша команда */
+    .section-title {
+        color:var(--primary-teks-color);        
+        font-weight: 700;
+        font-size: 36px;
+        line-height:1.16;
+        text-align: center;         
+        }
+    
+        .section-avatar{
+        color: var(--primary-teks-color);                
+        font-size: 16px;
+        line-height: 1.18;        
+        text-align: center;
+        }
+        .section-team {
+        color: var(--secondary-teks-color);            
+        font-size: 16px;
+        line-height:1.18;
+        text-align: center;          
+        }
+    
+    
+    /* Button nav portfolio */
+    
+    .radio-btn  {
+        color:var(--primary-teks-color);
+        font-family: Roboto,sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        cursor: pointer;
+          
+    }
+     
+    .radio-btn:hover,
+    .radio-btn:focus {
+        color:var(--pre-primary-color); 
+        background-color: var(--akcent-color);  
+    }
+        
+     
+    
+    
+    .project-title {
+        color:var(--primary-teks-color) ;       
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+    }
+    
+    .project-description {
+        color: var(--secondary-teks-color);       
+        font-size: 16px;
+        line-height: 1.8;
+      
+    }
+    
+     
+     
+    /* Footer */
+    
+    #link {
+        color: var(--pre-primary-color);
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7px;
+        letter-spacing: 0.03em;
+          
+     }
+    
+    
