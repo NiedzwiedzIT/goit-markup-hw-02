@@ -1,20 +1,18 @@
 :root {
-    --pre-primary-color:#FFFFFF;
+    --primary-color:#FFFFFF;
     --primary-teks-color:#212121;
     --secondary-teks-color:#757575;
-    --akcent-color:#2196F3;
-    --body-color:#F5F5F5;
+    --hero-footer-color:#2F303A;
+    --akcent-color:#2196F3;    
     --auth-nav-color:rgba(255, 255, 255, 0.6);
     --button-color-nav:#F5F4FA;
     }
     
     body {
-        background-color: var(--body-color);
-        font-family:Roboto,sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 0.03em;
-        text-decoration: none;  
+        color: var(--primary-teks-color);
+        background-color:var(--primary-color);
+        font-family:Roboto,sans-serif;         
+        letter-spacing: 0.03em;          
     } 
      
     ul {
@@ -22,83 +20,102 @@
     }
     
     /* Шапка */
-    /* Header  and footer logo */
+    /* Header  and footer logo */   
     .header-logo,
     .logo-footer,
     .header-title  {
-        font-family: Raleway, cursive;                  
-        font-size: 14px;
-        line-height: 1.7;         
-    }
-    
+        font-family: Raleway,sans-serif;   
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        text-decoration: none;        
+    } 
+
     .header-logo {
         color: #000000;
     }
+    .logo-footer {
+        color:var(--primary-color);           
+    }
     
     .header-title {
-        color:var(--akcent-color);
-           
+        color:var(--akcent-color);           
         }
     
-     .logo-footer {
-        color:var(--pre-primary-color);        
-    }
+    
        
     /* Header nav  */
     .header-nav,
-     .link {
+    .link   {
         color:var(--primary-teks-color);
-        letter-spacing: 0.02em;
-        font-family: inherit;         
+        letter-spacing: 0.02em;                  
         font-weight: 500;
         font-size: 14px;
-        line-height:1.1;
-        text-decoration: none; 
+        line-height:1.14;
+        text-decoration: none;
+          
            
         }
+    .header-nav .current {
+        color: var(--akcent-color);
+    }
+
+     
         .header-nav .link:hover,
         .header-nav .link:focus {
             color:var(--akcent-color);
             }
     
-    /* Header auth and footer auth*/
+    /* Header auth*/
     .header-auth a {
-        color:rgba(255, 255, 255, 0.6);
-        letter-spacing: 0.03em;
-        font-style: normal;
-        font-weight: 400;
+        color:var(--secondary-teks-color);
+        letter-spacing: 0.02em; 
+        font-weight: 500;        
         font-size: 14px;
-        line-height: 1.7px;
+        line-height: 1.14;
         text-decoration: none;
     }
-    .header-auth  a:hover {
+    .header-auth  a:hover,
+    .header-auth  a:focus {
         color:var(--akcent-color);
     }
         
     /* Hero */
     /* Hero title*/
+    .section-hero {
+        background-color:var(--hero-footer-color)
+    }
     .hero-title {
-        color:var(--pre-primary-color);
+        color:var(--primary-color);       
         letter-spacing: 0.06em;         
         text-align: center;
-        text-transform: uppercase;
-        font-style: normal;
+        text-transform: uppercase;        
         font-weight: 900;
         font-size: 44px;
-        line-height:1.4;    
+        line-height:1.36;    
     }
      
     /* Hero button */
-    .hero-btm,
-    .hero-btm:active {
-        color: var(--pre-primary-color);
+     
+    .hero-btm {
+        color: var(--primary-color);
         background-color: var(--akcent-color);    
-        font-family: Roboto,sans-serif;
+        font-family:inherit;
         font-weight: 700;
         font-size: 16px;
-        line-height: 1.8;
+        line-height: 1.88;
         letter-spacing: 0.06em;
         cursor: pointer;
+        }
+   
+    .hero-btm:hover,
+    .hero-btm:focus {
+        color: var(--primary-color);
+        background-color: var(--akcent-color);    }   
+         
+
+    .hero-btm:active{       
+        background-color:#188CE8;
         }
       
     
@@ -108,13 +125,13 @@
         color: var(--primary-teks-color);        
         font-weight: 700;
         font-size: 14px;
-        line-height: 1.15;        
+        line-height: 1.14;        
         text-transform: uppercase;
     }
     .features-description {
         color: var(--secondary-teks-color);        
         font-size: 14px;
-        line-height: 1.7px;         
+        line-height: 1.71;         
     }
     
     
@@ -127,6 +144,14 @@
         line-height:1.16;
         text-align: center;         
         }
+
+    .visuali-hidden {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+    } 
     
         .section-avatar{
         color: var(--primary-teks-color);                
@@ -146,16 +171,17 @@
     
     .radio-btn  {
         color:var(--primary-teks-color);
-        font-family: Roboto,sans-serif;
+        font-family:inherit;
         font-size: 16px;
-        line-height: 1.6;
+        line-height: 1.62;
         cursor: pointer;
+        letter-spacing: 0.03em;
           
     }
      
     .radio-btn:hover,
     .radio-btn:focus {
-        color:var(--pre-primary-color); 
+        color:var(--primary-color); 
         background-color: var(--akcent-color);  
     }
         
@@ -173,21 +199,32 @@
     .project-description {
         color: var(--secondary-teks-color);       
         font-size: 16px;
-        line-height: 1.8;
-      
+        line-height: 1.88;      
     }
     
      
      
     /* Footer */
-    
-    #link {
-        color: var(--pre-primary-color);
+    /*  Footer auth*/
+    .footer-auth a {
+        color:rgba(255, 255, 255, 0.6);
+       
+        letter-spacing: 0.03em;         
+        font-size: 14px;
+        line-height: 1.71;
         text-decoration: none;
+    }
+     .footer-addres {
+        background-color:var(--hero-footer-color);
         font-style: normal;
         font-weight: 400;
+     }
+    
+    .footer-link {
+        color: var(--primary-color);
+        text-decoration: none;          
         font-size: 14px;
-        line-height: 1.7px;
+        line-height: 1.71;
         letter-spacing: 0.03em;
           
      }
