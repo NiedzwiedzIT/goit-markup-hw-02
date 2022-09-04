@@ -207,15 +207,16 @@
     /* Footer */
     /*  Footer auth*/
     .footer-auth a {
-        color:rgba(255, 255, 255, 0.6);
-       
+        color:rgba(255, 255, 255, 0.6);       
         letter-spacing: 0.03em;         
         font-size: 14px;
         line-height: 1.71;
         text-decoration: none;
     }
-     .footer-addres {
+    .footer {
         background-color:var(--hero-footer-color);
+    }
+     .footer-addres {        
         font-style: normal;
         font-weight: 400;
      }
