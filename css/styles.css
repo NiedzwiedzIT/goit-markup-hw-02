@@ -23,7 +23,7 @@
     /* Header  and footer logo */   
     .header-logo,
     .logo-footer,
-    .header-title  {
+    .header-title {
         font-family: "Raleway",sans-serif;   
         font-weight: 700;
         font-size: 26px;
@@ -39,32 +39,30 @@
     }
     
     .header-title {
-        color:var(--akcent-color);           
-        }
-    
+        color:var(--akcent-color); 
+    }
     
        
     /* Header nav  */
     .header-nav,
-    .link   {
+    .link {
         color:var(--primary-teks-color);
         letter-spacing: 0.02em;                  
         font-weight: 500;
         font-size: 14px;
         line-height:1.14;
-        text-decoration: none;
-          
-           
-        }
+        text-decoration: none;          
+    }
+
     .header-nav .current {
         color: var(--akcent-color);
     }
 
      
-        .header-nav .link:hover,
-        .header-nav .link:focus {
-            color:var(--akcent-color);
-            }
+    .header-nav .link:hover,
+    .header-nav .link:focus {
+        color:var(--akcent-color);
+    }
     
     /* Header auth*/
     .header-auth a {
@@ -75,6 +73,7 @@
         line-height: 1.14;
         text-decoration: none;
     }
+
     .header-auth  a:hover,
     .header-auth  a:focus {
         color:var(--akcent-color);
@@ -85,6 +84,7 @@
     .section-hero {
         background-color:var(--hero-footer-color)
     }
+
     .hero-title {
         color:var(--primary-color);       
         letter-spacing: 0.06em;         
@@ -106,17 +106,18 @@
         line-height: 1.88;
         letter-spacing: 0.06em;
         cursor: pointer;
-        }
+    }
    
     .hero-btm:hover,
     .hero-btm:focus {
         color: var(--primary-color);
-        background-color: var(--akcent-color);    }   
+        background-color: var(--akcent-color);    
+    }   
          
 
-    .hero-btm:active{       
+    .hero-btm:active {       
         background-color:#188CE8;
-        }
+    }
       
     
     /* Sections features */
@@ -128,6 +129,7 @@
         line-height: 1.14;        
         text-transform: uppercase;
     }
+
     .features-description {
         color: var(--secondary-teks-color);        
         font-size: 14px;
@@ -143,7 +145,7 @@
         font-size: 36px;
         line-height:1.16;
         text-align: center;         
-        }
+    }
 
     .visuali-hidden {
         position: absolute;
@@ -153,13 +155,14 @@
         margin: -1px;
     } 
     
-        .section-avatar{
+    .section-avatar {
         color: var(--primary-teks-color);                
         font-size: 16px;
         line-height: 1.18;        
         text-align: center;
-        }
-        .section-team {
+    }
+
+    .section-team {
         color: var(--secondary-teks-color);            
         font-size: 16px;
         line-height:1.18;
@@ -206,6 +209,10 @@
      
     /* Footer */
     /*  Footer auth*/
+    .footer {
+        background-color:var(--hero-footer-color);
+    }
+
     .footer-auth a {
         color:rgba(255, 255, 255, 0.6);       
         letter-spacing: 0.03em;         
@@ -213,13 +220,11 @@
         line-height: 1.71;
         text-decoration: none;
     }
-    .footer {
-        background-color:var(--hero-footer-color);
-    }
+    
      .footer-addres {        
         font-style: normal;
         font-weight: 400;
-     }
+    }
     
     .footer-link {
         color: var(--primary-color);
@@ -228,6 +233,6 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
           
-     }
+    }
     
     
