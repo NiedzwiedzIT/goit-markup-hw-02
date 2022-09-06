@@ -3,6 +3,8 @@
     --primary-teks-color:#212121;
     --secondary-teks-color:#757575;
     --hero-footer-color:#2F303A;
+    --hero-btn-color:#188CE8;
+    --hero-logo-color:#000000;
     --akcent-color:#2196F3;    
     --auth-nav-color:rgba(255, 255, 255, 0.6);
     --button-color-nav:#F5F4FA;
@@ -32,7 +34,7 @@
     } 
 
     .header-logo {
-        color: #000000;
+        color: var(--hero-logo-color);
     }
     .logo-footer {
         color:var(--primary-color);           
@@ -110,16 +112,10 @@
    
     .hero-btm:hover,
     .hero-btm:focus {
-        color: var(--primary-color);
-        background-color: var(--akcent-color);    
+            background-color:var(--hero-btn-color);    
     }   
          
-
-    .hero-btm:active {       
-        background-color:#188CE8;
-    }
-      
-    
+     
     /* Sections features */
     
     .title-features {
@@ -143,8 +139,10 @@
         color:var(--primary-teks-color);        
         font-weight: 700;
         font-size: 36px;
-        line-height:1.16;
-        text-align: center;         
+        line-height:1.16;                
+    }
+    .team {
+        background-color:var(--button-color-nav);
     }
 
     .visuali-hidden {
@@ -154,9 +152,13 @@
         height: 1px;
         margin: -1px;
     } 
+    .section-avatar-color{
+        background-color: #FFFFFF;
+               
+    }
     
     .section-avatar {
-        color: var(--primary-teks-color);                
+        color: var(--primary-teks-color);                        
         font-size: 16px;
         line-height: 1.18;        
         text-align: center;
@@ -176,6 +178,7 @@
         color:var(--primary-teks-color);
         font-family:inherit;
         font-size: 16px;
+        font-weight: 500;
         line-height: 1.62;
         cursor: pointer;
         letter-spacing: 0.03em;
@@ -214,11 +217,15 @@
     }
 
     .footer-auth a {
-        color:rgba(255, 255, 255, 0.6);       
+        color:var(--auth-nav-color);       
         letter-spacing: 0.03em;         
         font-size: 14px;
         line-height: 1.71;
         text-decoration: none;
+    }
+    .footer-auth a:hover,
+    .footer-auth a:focus {
+        color:var(--akcent-color);
     }
     
      .footer-addres {        
