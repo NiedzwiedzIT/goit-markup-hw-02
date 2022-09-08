@@ -9,6 +9,23 @@
     --auth-nav-color:rgba(255, 255, 255, 0.6);
     --button-color-nav:#F5F4FA;
     }
+
+         h1,
+         h2,
+         h3,
+         h4,
+         h5,
+         h6,
+         p {
+
+        margin: 0px;
+         }
+
+
+         ul {
+        padding-left: 0;
+        list-style: none;
+    }
     
     body {
         color: var(--primary-teks-color);
@@ -16,16 +33,23 @@
         font-family:"Roboto",sans-serif;         
         letter-spacing: 0.03em;          
     } 
-     
-    ul {
-        list-style: none;
+
+    .container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
     }
+     
+    
     
     /* Шапка */
     /* Header  and footer logo */   
     .header-logo,
     .logo-footer,
     .header-title {
+       
         font-family: "Raleway",sans-serif;   
         font-weight: 700;
         font-size: 26px;
@@ -46,6 +70,14 @@
     
        
     /* Header nav  */
+    .header-nav {
+        display: flex;
+        justify-content: center;
+        }  
+    .header-item {
+        margin-left: 93px;
+    }
+
     .header-nav,
     .link {
         color:var(--primary-teks-color);
@@ -84,10 +116,17 @@
     /* Hero */
     /* Hero title*/
     .section-hero {
-        background-color:var(--hero-footer-color)
+        padding: 200px 452px 280px;
+        margin-bottom: 94px;
+        background-color:var(--hero-footer-color);
+        display: flex;
+        align-items: center;
+        text-align: center; 
     }
 
     .hero-title {
+        width: 696px;
+        margin-bottom: 30px;
         color:var(--primary-color);       
         letter-spacing: 0.06em;         
         text-align: center;
@@ -100,13 +139,15 @@
     /* Hero button */
      
     .hero-btm {
+        padding: 10px 32px;
+        border-radius: 4px;
         color: var(--primary-color);
         background-color: var(--akcent-color);    
         font-family:inherit;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
-        letter-spacing: 0.06em;
+        letter-spacing: 0.06em;        
         cursor: pointer;
     }
    
@@ -117,8 +158,15 @@
          
      
     /* Sections features */
+
+    .section-features {
+        margin-bottom: 94px;
+         
+    }
     
     .title-features {
+        margin-bottom: 10px;    
+        width: 1170px;  
         color: var(--primary-teks-color);        
         font-weight: 700;
         font-size: 14px;
@@ -127,6 +175,9 @@
     }
 
     .features-description {
+        margin-bottom: 30px;
+        height: 72px;
+        width: 270px;
         color: var(--secondary-teks-color);        
         font-size: 14px;
         line-height: 1.71;         
@@ -135,13 +186,21 @@
     
     /* Чим ми займаємося */
     /* Наша команда */
+    .section-works {
+        margin-bottom: 94px;
+    }
+
     .section-title {
+        margin-bottom: 50px;
+        padding-top: 94px;   
+
         color:var(--primary-teks-color);        
         font-weight: 700;
         font-size: 36px;
         line-height:1.16;                
     }
     .team {
+        margin-bottom: 94px;
         background-color:var(--button-color-nav);
     }
 
@@ -153,6 +212,7 @@
         margin: -1px;
     } 
     .section-avatar-color{
+       
         background-color: #FFFFFF;
                
     }
@@ -173,8 +233,14 @@
     
     
     /* Button nav portfolio */
+    .section-radio-btn{
+        margin-top: 94px;
+        display: flex;
+        justify-content: center;
+    }
     
     .radio-btn  {
+        margin-right: 8px;
         color:var(--primary-teks-color);
         font-family:inherit;
         font-size: 16px;
@@ -213,10 +279,18 @@
     /* Footer */
     /*  Footer auth*/
     .footer {
+        padding: 60px;
+        min-width: 1600px;
+        height: 252px;
         background-color:var(--hero-footer-color);
     }
 
+    .footer-auth{
+        margin-bottom: 9px;
+        margin-top: 9px;
+    }
     .footer-auth a {
+        
         color:var(--auth-nav-color);       
         letter-spacing: 0.03em;         
         font-size: 14px;
@@ -228,18 +302,20 @@
         color:var(--akcent-color);
     }
     
-     .footer-addres {        
+     .footer-addres {
+        margin-top: 20px;        
         font-style: normal;
         font-weight: 400;
     }
     
     .footer-link {
+        margin-bottom: 9px;
         color: var(--primary-color);
         text-decoration: none;          
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-          
     }
-    
+          
+   
     
