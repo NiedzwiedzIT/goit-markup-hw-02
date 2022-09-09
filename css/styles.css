@@ -10,23 +10,32 @@
     --button-color-nav:#F5F4FA;
     }
 
-         h1,
-         h2,
-         h3,
-         h4,
-         h5,
-         h6,
-         p {
-
+    /* Utility */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
         margin: 0px;
-         }
+    }
+         
+         /* Visuali Hidden */
+    .visuali-hidden {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+    }
 
 
-         ul {
+    ul {
         padding-left: 0;
         list-style: none;
     }
-    
+    /* Body */
     body {
         color: var(--primary-teks-color);
         background-color:var(--primary-color);
@@ -34,6 +43,7 @@
         letter-spacing: 0.03em;          
     } 
 
+    /* Container */
     .container {
         width: 1200px;
         margin-left: auto;
@@ -45,10 +55,19 @@
     
     
     /* Шапка */
-    /* Header  and footer logo */   
+    /* Header  and footer logo */ 
+    
+    
+    /* Main-nav */
+    .main-nav {
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
     .header-logo,
     .logo-footer,
     .header-title {
+        margin-right: 93px;
        
         font-family: "Raleway",sans-serif;   
         font-weight: 700;
@@ -74,9 +93,14 @@
         display: flex;
         justify-content: center;
         }  
-    .header-item {
-        margin-left: 93px;
+
+
+    .header-item:not(:last-child) {
+        margin-right: 50px;
     }
+    /* .header-item+.header-item {
+        margin-left: 50px;
+    } */
 
     .header-nav,
     .link {
@@ -99,7 +123,17 @@
     }
     
     /* Header auth*/
+    .header-auth {
+        display: flex;
+        margin-left: auto;
+        
+    }
+    .header-auth .item:not(:last-child){
+        margin-right: 50px;
+        
+    }
     .header-auth a {
+        
         color:var(--secondary-teks-color);
         letter-spacing: 0.02em; 
         font-weight: 500;        
@@ -125,11 +159,12 @@
     }
 
     .hero-title {
+        height: 120px;
         width: 696px;
         margin-bottom: 30px;
         color:var(--primary-color);       
         letter-spacing: 0.06em;         
-        text-align: center;
+         
         text-transform: uppercase;        
         font-weight: 900;
         font-size: 44px;
@@ -161,12 +196,19 @@
 
     .section-features {
         margin-bottom: 94px;
+
          
+    }
+    .section-item-features {
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 0;
+        
     }
     
     .title-features {
         margin-bottom: 10px;    
-        width: 1170px;  
+          
         color: var(--primary-teks-color);        
         font-weight: 700;
         font-size: 14px;
@@ -175,7 +217,7 @@
     }
 
     .features-description {
-        margin-bottom: 30px;
+        margin-right: 30px;
         height: 72px;
         width: 270px;
         color: var(--secondary-teks-color);        
@@ -186,31 +228,49 @@
     
     /* Чим ми займаємося */
     /* Наша команда */
+    .section {
+        text-align: center;
+        
+    }
+
+
     .section-works {
+        display: flex;
         margin-bottom: 94px;
     }
 
     .section-title {
+        padding-top: 94px;
         margin-bottom: 50px;
-        padding-top: 94px;   
+        justify-content: center;
 
         color:var(--primary-teks-color);        
         font-weight: 700;
         font-size: 36px;
         line-height:1.16;                
     }
-    .team {
-        margin-bottom: 94px;
+
+    .section-item {
+       display: flex;
+       flex-wrap: wrap;
+       padding-bottom: 94px;
+       margin-top: 0;
+       margin-bottom: 0;
+    }
+    .project-item {
+        display: block;
+        /* margin-right:30px; */
+    }
+     
+    .section-avatar-color:not(:last-child){
+        margin-right: 30px;
+    }
+    .team:nth-child(2n) {
+        /* margin-bottom: 94px; */
         background-color:var(--button-color-nav);
     }
 
-    .visuali-hidden {
-        position: absolute;
-        clip: rect(0 0 0 0);
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-    } 
+   
     .section-avatar-color{
        
         background-color: #FFFFFF;
@@ -218,6 +278,8 @@
     }
     
     .section-avatar {
+        margin-top: 30px;
+        margin-bottom: 10px;
         color: var(--primary-teks-color);                        
         font-size: 16px;
         line-height: 1.18;        
@@ -225,6 +287,7 @@
     }
 
     .section-team {
+        margin-bottom: 30px;
         color: var(--secondary-teks-color);            
         font-size: 16px;
         line-height:1.18;
@@ -261,6 +324,9 @@
     
     
     .project-title {
+        margin-top: 20px;
+        margin-bottom: 4px;
+
         color:var(--primary-teks-color) ;       
         font-weight: 700;
         font-size: 18px;
@@ -269,6 +335,8 @@
     }
     
     .project-description {
+        margin-bottom: 20px;
+
         color: var(--secondary-teks-color);       
         font-size: 16px;
         line-height: 1.88;      
@@ -280,15 +348,20 @@
     /*  Footer auth*/
     .footer {
         padding: 60px;
-        min-width: 1600px;
-        height: 252px;
+
         background-color:var(--hero-footer-color);
     }
 
-    .footer-auth{
-        margin-bottom: 9px;
-        margin-top: 9px;
+    .footer-addres {
+        margin-top: 20px;
+               
+        font-style: normal;
+        font-weight: 400;
     }
+    .footer-addres li    {
+        margin-bottom: 9px;
+    }
+
     .footer-auth a {
         
         color:var(--auth-nav-color);       
@@ -302,14 +375,11 @@
         color:var(--akcent-color);
     }
     
-     .footer-addres {
-        margin-top: 20px;        
-        font-style: normal;
-        font-weight: 400;
-    }
+     
     
     .footer-link {
-        margin-bottom: 9px;
+         
+
         color: var(--primary-color);
         text-decoration: none;          
         font-size: 14px;

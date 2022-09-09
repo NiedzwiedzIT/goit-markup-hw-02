@@ -18,9 +18,9 @@
 
   <body>
     <!-- Шапка -->
-    <header class="header">
-      <div class="container">
-        <nav>
+    <div class="container">
+      <header class="header main-nav">
+        <nav class="main-nav">
           <!-- Header logo -->
           <a href="#" class="header-title">Web<span class="header-logo">Studio</span></a>
 
@@ -31,14 +31,13 @@
             <li class="header-item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
-      </div>
-      <dir class="container">
+
         <ul class="header-auth">
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </dir>
-    </header>
+      </header>
+    </div>
 
     <main>
       <!-- Hero -->
@@ -53,7 +52,7 @@
       <div class="container">
         <section class="section-features">
           <h2 class="visuali-hidden">Особливості</h2>
-          <ul>
+          <ul class="section-item-features">
             <li>
               <h3 class="title-features">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="features-description">
@@ -102,7 +101,7 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <!-- Product Designer -->
-          <ul>
+          <ul class="section-item">
             <li class="section-avatar-color">
               <img src="./images/imgproductdesigner-min.jpg" width="270" alt="Product Designer" />
 
